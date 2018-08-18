@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UNION-FIND\QuickFindUF.cs" />
     <Compile Include="UNION-FIND\QuickUnionUF.cs" />
+    <Compile Include="UNION-FIND\WeightedQUPathCompression.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
