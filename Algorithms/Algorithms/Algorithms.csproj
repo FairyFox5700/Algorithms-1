@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Algorithms.QUEUE.LinkedListQueue</StartupObject>
+    <StartupObject>Algorithms.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GENERIC STACK\GenericFixedArrayStack.cs" />
+    <Compile Include="GENERIC STACK\GenericLinkedListStack.cs" />
+    <Compile Include="GENERIC STACK\GenericResizingArrayStack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QUEUE\LinkedListQueue.cs" />
