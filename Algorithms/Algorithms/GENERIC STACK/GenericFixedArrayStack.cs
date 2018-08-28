@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Algorithms.GENERIC_STACK
 {
-    class GenericFixedArrayStack<T>
+    class GenericFixedArrayStack<T> : IEnumerable<T>
     {
         private T[] s;
         private int N = 0;
@@ -33,6 +34,19 @@ namespace Algorithms.GENERIC_STACK
             T item = s[--N];
             s[N] = default(T); //set as null to avoid loitering
             return item;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = N - 1; i >= 0; i--)
+            {
+                yield return s[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
 
         public static void Main()

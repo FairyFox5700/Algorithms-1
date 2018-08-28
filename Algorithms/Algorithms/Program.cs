@@ -94,13 +94,33 @@ namespace Algorithms
             //llStack.Push("C");
             //llStack.Push("D");
 
+            //Console.WriteLine("Printing Stack:");
+            //foreach (string item in llStack)
+            //{
+            //    Console.Write(item + ", ");
+            //}
+
             //llStack.Pop();
             //llStack.Pop();
             //llStack.Pop();
 
+            //Console.WriteLine("\nPrinting Stack:");
+            //foreach (string item in llStack)
+            //{
+            //    Console.Write(item + ", ");
+            //}
+
             //llStack.Push("C");
             //llStack.Push("D");
-            //llStack.Push("B"); 
+            //llStack.Push("B");
+            //llStack.Push("X");
+            //llStack.Push("Y");
+
+            //Console.WriteLine("\nPrinting Stack:");
+            //foreach (string item in llStack)
+            //{
+            //    Console.Write(item + ", ");
+            //}
             #endregion
 
             #region Commented Code for the Generic Stack using Fixed Length Array
@@ -128,16 +148,34 @@ namespace Algorithms
             //rsStack.Push("C");
             //rsStack.Push("D");
 
+            //Console.WriteLine("Printing Stack:");
+            //foreach (string item in rsStack)
+            //{
+            //    Console.Write(item + ", ");
+            //}
+
             //rsStack.Pop();
             //rsStack.Pop();
             //rsStack.Pop();
+
+            //Console.WriteLine("\nPrinting Stack:");
+            //foreach (string item in rsStack)
+            //{
+            //    Console.Write(item + ", ");
+            //}
 
             //rsStack.Push("D");
             //rsStack.Push("C");
             //rsStack.Push("B");
             //rsStack.Push("B");
             //rsStack.Push("B");
-            //rsStack.Push("B"); 
+            //rsStack.Push("B");
+
+            //Console.WriteLine("\nPrinting Stack:");
+            //foreach (string item in rsStack)
+            //{
+            //    Console.Write(item + ", ");
+            //}
             #endregion
 
             Console.ReadLine();

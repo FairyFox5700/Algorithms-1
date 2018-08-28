@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Algorithms.GENERIC_STACK
 {
-    class GenericLinkedListStack<T>
+    class GenericLinkedListStack<T> : IEnumerable<T>
     {
         private Node first = null;
 
@@ -37,6 +37,24 @@ namespace Algorithms.GENERIC_STACK
             T item = first.item;
             first = first.next;
             return item;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            Node current = first;
+
+            while (current != null)
+            {
+                T item = current.item;
+                current = current.next;
+
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
 
         public static void Main()

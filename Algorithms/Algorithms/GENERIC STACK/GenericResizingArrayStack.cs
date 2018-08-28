@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Algorithms.GENERIC_STACK
 {
-    class GenericResizingArrayStack<T>
+    class GenericResizingArrayStack<T> : IEnumerable<T>
     {
         private T[] s;
         private int N = 0;
@@ -74,6 +75,19 @@ namespace Algorithms.GENERIC_STACK
             rsStack.Push("B");
 
             Console.ReadLine();
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = N - 1; i >= 0; i--)
+            {
+                yield return s[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
