@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Algorithms.MERGE_SORT.MergeSort</StartupObject>
+    <StartupObject>Algorithms.MERGE_SORT.BottomUpMergeSort</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
     <Compile Include="GENERIC STACK\GenericFixedArrayStack.cs" />
     <Compile Include="GENERIC STACK\GenericLinkedListStack.cs" />
     <Compile Include="GENERIC STACK\GenericResizingArrayStack.cs" />
+    <Compile Include="MERGE SORT\BottomUpMergeSort.cs" />
     <Compile Include="MERGE SORT\MergeSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
