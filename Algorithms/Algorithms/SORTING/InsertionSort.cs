@@ -114,5 +114,27 @@ namespace Algorithms.SORTING
 
             Console.WriteLine(holdValue);
         }
+
+        /// <summary>
+        /// The method to sort the array using the Insertion Sort implementation
+        /// </summary>
+        /// <param name="a">The array to be sorted</param>
+        public static void sort(IComparable[] a, int lo, int hi)
+        {
+            for (int i = lo; i <= hi; i++)
+            {
+                for (int j = i; j > lo; j--)
+                {
+                    if (less(a[j], a[j - 1]))
+                    {
+                        exch(a, j, j - 1);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
