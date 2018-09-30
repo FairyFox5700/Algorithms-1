@@ -240,3 +240,9 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+ConsoleApplication1/ConsoleApplication1/Properties/AssemblyInfo.cs
+ConsoleApplication1/ConsoleApplication1.sln
+ConsoleApplication1/ConsoleApplication1/App.config
+ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.csproj
+ConsoleApplication1/ConsoleApplication1/Program.cs
+ConsoleApplication1/ConsoleApplication1/Properties/AssemblyInfo.cs
