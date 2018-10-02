@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Algorithms.UNION_FIND;
 using System.Diagnostics;
 using Algorithms.GENERIC_STACK;
+using Algorithms.PRIORITY_QUEUES;
 
 namespace Algorithms
 {
@@ -178,7 +179,16 @@ namespace Algorithms
             //}
             #endregion
 
-            Console.ReadLine();
+            #region Commented Code for the Unordered Priority Queue
+            //UnorderedPriorityQueue _upq = new UnorderedPriorityQueue(10);
+
+            //_upq.insert(123);
+            //_upq.insert(127);
+            //_upq.insert(125);
+            //_upq.delMax(); 
+            #endregion
+
+            Console.ReadKey();
         }
     }
 }
