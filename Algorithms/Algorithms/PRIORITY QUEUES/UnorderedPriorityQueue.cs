@@ -8,24 +8,47 @@ namespace Algorithms.PRIORITY_QUEUES
 {
     class UnorderedPriorityQueue
     {
+        /// <summary>
+        /// The array to hold the data
+        /// </summary>
         private static int[] pq;
+
+        /// <summary>
+        /// The variable indicates the last element of the priority queue in array
+        /// </summary>
         private int N;
 
+        /// <summary>
+        /// The constructor to define the Unordered Priority Queue
+        /// </summary>
+        /// <param name="capacity">The capacity or length of the array for the priority queue</param>
         public UnorderedPriorityQueue(int capacity)
         {
             pq = new int[capacity];
         }
 
+        /// <summary>
+        /// Method to check whether the priority queue is empty or not
+        /// </summary>
+        /// <returns>If the queue is empty then returns true else false</returns>
         public bool isEmpty()
         {
             return N == 0;
         }
 
+        /// <summary>
+        /// Method to insert a new element in the priority queue
+        /// </summary>
+        /// <param name="x">The element to insert in the priority queue</param>
         public void insert(int x)
         {
             pq[N++] = x;
         }
 
+        /// <summary>
+        /// Method to delete the maximum value element from the priority queue
+        /// </summary>
+        /// <returns>The deleted element from the queue</returns>
         public int delMax()
         {
             int max = 0;
@@ -47,7 +70,6 @@ namespace Algorithms.PRIORITY_QUEUES
         /// <summary>
         /// The method to exchange/swap the two numbers in the array
         /// </summary>
-        /// <param name="a">The array in which swapping is required</param>
         /// <param name="i">The index of the first variable</param>
         /// <param name="j">The index of the second variable</param>
         private static void exch(int i, int j)
