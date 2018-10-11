@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Algorithms.PRIORITY_QUEUES.BinaryHeap</StartupObject>
+    <StartupObject>Algorithms.PRIORITY_QUEUES.HeapSort</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,7 @@
     <Compile Include="MERGE SORT\BottomUpMergeSort.cs" />
     <Compile Include="MERGE SORT\MergeSort.cs" />
     <Compile Include="PRIORITY QUEUES\BinaryHeap.cs" />
+    <Compile Include="PRIORITY QUEUES\HeapSort.cs" />
     <Compile Include="PRIORITY QUEUES\UnorderedPriorityQueue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
